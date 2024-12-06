@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+	font-family: "Montserrat", sans-serif;
+}
+
+:root{
+	--size_title:72px;
+	--container__width:1170px
+}
+
+.container{
+	max-width: var(--container__width);
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.header {
+	background-color: #e5e5e5;
+}
+
+
+.header__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 16px;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+
+.header__logo {
+	margin-left: 23px;
+}
+
+.header__menu {
+}
+
+.header__menu-list {
+	display: flex;
+	column-gap: 68px;
+	margin-right: 19px;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.header__menu-item {
+	font-weight: 500;
+	font-size: 18px;
+	color: black;
+	transition-duration: 0.1S;
+}
+
+.header__menu-item:hover{
+	font-size: 20px;
+	text-align: center;
+}
+
+.gitarist {
+	background-color: #e5e5e5;
+	position: relative;
+}
+
+.gitarist__row {
+	display: flex;
+}
+
+.gitarist__img {
+	margin-top: 10px;
+	position: relative;
+	z-index: 100;
+}
+
+.gitarist__img::before{
+	content: '';
+	position: absolute;
+	width: 634px;
+	height: 611px;
+	z-index: -1;
+	background: url('/img/fifure__behainde.svg') center/contain no-repeat;
+	top: -40px;
+	left: -10px;
+}
+
+.gitarist__inf {
+	display: flex;
+	flex-direction: column;
+	margin-left: -193px;
+	margin-top: 146px;
+}
+
+.gitarist__soc {
+	display: flex;
+	gap: 17px;
+	margin-bottom: 1px;
+}
+
+.gitarist__inf-title {
+	font-weight: 600;
+	font-size: var(--size_title);
+	color: black;
+	position: relative;
+	z-index: 1;
+}
+
+.gitarist__inf-title::before{
+	content: '';
+	position: absolute;
+	width: 194px;
+	height: 194px;
+	background: url('/img/Subtract__circle.svg') center/contain no-repeat;
+	z-index: -1;
+	top: -50px;
+	left: 220px;
+}
+
+.gitarist__inf-subtitle {
+	font-weight: 400;
+	font-size: 16px;
+	color: black;
+	margin-bottom: 20px;
+}
+
+.gitarist__inf-row {
+	display: flex;
+	align-items: center;
+}
+
+.gitarist__inf-btn {
+	width: 200px;
+	height: 59px;
+	border-radius: 100px;
+	background-color: #F28B64;
+	font-weight: 500;
+	font-size: 18px;
+	color: white;
+	line-height: 105.2%;
+	box-shadow: 0px 5px 10px gray;
+	transition-duration: 0.1s;
+}
+
+.gitarist__inf-btn:hover{
+	margin-top: 5px;
+	box-shadow: 0 1px 5px gray;
+}
+
+.gitarist__inf-questions {
+	width: 82px;
+	font-weight: 300;
+	font-size: 16px;
+	position: relative;
+	margin-left: 90px;
+}
+
+.gitarist__inf-questions::before{
+	content: url('/img/icon__chat.svg');
+	position: absolute;
+	left: -53px;
+}
+
+.teaching {
+
+}
+
+.teaching__column {
+	display: flex;
+	flex-direction: column;
+}
+
+.teaching__column-title {
+	font-weight: 600;
+	font-size: var(--size_title);
+	margin-top: 32px;
+	margin-bottom: 40px;
+	color: black;
+
+}	
+
+.teaching__column-row {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.teaching__row-item1 {
+	width: 360px;
+	aspect-ratio: 1;
+	border-radius: 10px;
+	background-color: #e2e2e2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 5px 10px gray;
+	position: relative;
+}
+
+.teaching__row-item1::before{
+	content: '';
+	position: absolute;
+	background: url('/img/Subtract__circle.svg') no-repeat;
+	display: block;
+	width: 194px;
+	aspect-ratio: 1;
+	z-index: -1;
+	top: 210px;
+	left: -75px;
+}
+
+.teaching__row-item:nth-child(2) {
+	width: 360px;
+	aspect-ratio: 1;
+	border-radius: 10px;
+	background-color: #F28B64;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 5px 10px gray;
+}
+
+.teaching__row-item3 {
+	width: 360px;
+	aspect-ratio: 1;
+	border-radius: 10px;
+	background-color: #5290EA;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 5px 10px gray;
+	position: relative;
+}
+
+.teaching__row-item3::before{
+	content: '';
+	position: absolute;
+	background: url('/img/Subtract__circle.svg') no-repeat;
+	display: block;
+	width: 194px;
+	aspect-ratio: 1;
+	z-index: -1;
+	top: -95px;
+	left: 220px;
+}
+
+.teaching__row-item-img {
+	width: 197px;
+	height: 335px;
+	margin-top: 25px;
+}
+
+.teaching__row-item-text {
+	transform: rotate(90deg);
+	text-align: center;
+	font-weight: 600;
+	font-size: 36px;
+	width: 88px;
+	height: 88px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.teaching__column-row-awards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 124px;
+	margin-left: 147px;
+	margin-top: 28px;
+	margin-bottom: 56px;
+}
+
+.teaching__awards-item {
+	display: block;
+}
+
+.teaching__awards-item-num {
+	font-weight: 600;
+	font-size: 48px;
+	color: black;
+}
+
+	.first{
+		width: 139px;
+		height: 92px;
+	}
+
+	.second{
+		width: 139px;
+		height: 92px;
+	}
+
+	.third{
+		width: 139px;
+		height: 92px;
+	}
+
+	.fourti{
+		width: 139px;
+		height: 92px;
+	}
+
+.first::after{
+	content: url('/img/01.svg');
+	width: 80px;
+	aspect-ratio: 1;
+	position: relative;
+	top: -85px;
+	left: -95px;
+}
+
+.second::after{
+	content: url('/img/02.svg');
+	width: 80px;
+	aspect-ratio: 1;
+	position: relative;
+	top: -85px;
+	left: -95px;
+}
+
+.third::after{
+	content: url('/img/03.svg');
+	width: 80px;
+	aspect-ratio: 1;
+	position: relative;
+	top: -85px;
+	left: -95px;
+}
+
+.fourti::after{
+	content: url('/img/04.svg');
+	width: 80px;
+	aspect-ratio: 1;
+	position: relative;
+	top: -85px;
+	left: -95px;
+}
+
+.virtuoz {
+	padding-top: 47px;
+	padding-bottom: 46px;
+	background-color: #f0f0f0;
+}
+
+.virtuoz__row {
+	display: flex;
+	gap: 88px;
+	justify-content: center;
+}
+
+.virtuoz__row-img {
+	width: 542px;
+	height: 319px;
+	display: block;
+	margin-top: 110px;
+	margin-bottom: 110px;
+}
+
+.virtuoz__column{
+
+}
+
+.virtuoz__column-title{
+	font-size: clamp(50px,3.75vw,72px);
+	font-weight: 600;
+	color: black;
+	margin-bottom: clamp(10px,1.04vw,20px);
+}
+
+.virtuoz__column-subtitle {
+	font-weight: 400;
+	font-size: clamp(14px,0.9vw,18px);
+	color: black;
+	margin-bottom: 32px;
+}
+
+
+.gitar {
+
+}
+
+.container {
+
+}
+
+.gitar__row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gitar__text {
+	display: flex;
+	margin-left: 97px;
+	flex-direction: column;
+}
+
+.gitar__text-title {
+	font-weight: 600;
+	font-size: clamp(40px,3.75vw,72px);
+	margin-top: 39px;
+	margin-bottom: 20px;
+	color: black;
+}
+
+.gitar__row-img{
+	width: 637px;
+	height: 272px;
+	margin-left: -160px;
+	margin-top: 40px;
+}
+
+
+
+
+
+
+
+@media(max-width:1439px){
+	.gitarist:before{
+		display: none;
+	}
+	.gitarist__img::before{
+		display: none;
+	}
+	.gitarist__row{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.gitarist__inf{
+		order: 1;
+		margin-bottom: 40px;
+		margin: 0 auto;
+		margin-top: 40px;
+		
+	}
+	.gitarist__img{
+		order: 2;
+		width: 600px;
+		height: auto;
+	}
+}
+
+@media(max-width:1100px){
+	.virtuoz__row{
+		flex-wrap: wrap;
+	}
+
+	.gitar__row-img{
+		order: 2;
+	}
+	.gitar__row{
+		justify-content: center;
+	}
+	.gitar__text{
+		margin-left: 0;
+	}
+}
+
+@media(max-width:630px){
+	.header__menu-list {
+		column-gap: 30px;
+	}
+
+	.gitarist__inf-title{
+		font-size: 36px;
+	}
+	.gitarist__img{
+		width: 300px;
+		height: auto;
+	}
+	.gitarist__inf-title::before{
+		display: none;
+	}
+	.gitarist__inf-subtitle{
+		font-size: 8px;
+	}
+	.gitarist__soc {
+		display: none;
+	}
+	.gitarist__inf-row{
+		flex-direction: column;
+	}
+	.gitarist__inf-btn{
+		width: 100px;
+		height: 30px;
+		font-size: 9px;
+		margin-bottom: 20px;
+	}
+
+	.teaching__row-item3::before{
+		left: 150px;
+	}
+
+	.teaching__column-title{
+		font-size: 60px;
+	}
+
+	.virtuoz__row-img {
+		width: 400px;
+		height: 250px;
+		margin-bottom: 20px;
+		margin-top: 0;
+	}
+
+	.virtuoz__row{
+		gap: 30px;
+	}
+}
+
+@media(max-width:504px){
+	.header__row{
+		justify-content: center;
+	}
+}
